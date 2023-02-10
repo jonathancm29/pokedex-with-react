@@ -12,7 +12,7 @@ function RenderPokemon ({pokemon}){
 }
 function NoPokemon() {
   return (
-    <p>No hay pokemon</p>
+    <p>No informacion del pokemon</p>
   )
 }
 
