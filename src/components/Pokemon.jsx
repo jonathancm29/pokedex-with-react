@@ -5,7 +5,7 @@ import {pokemonOnly} from '../services/pokemon'
 function RenderPokemon ({pokemon}){
   return (
     <li className="pokemon">
-      <p>{pokemon.name}</p>
+      <h3>{pokemon.name}</h3>
       <img src={pokemon.sprites.other.home.front_default} />
     </li>
   )
@@ -22,7 +22,10 @@ export function Pokemon ({name}) {
   const pokemonExist = pokemon !== null
 
   useEffect(() => {
-    setPokemon(pokemonOnly({name}))
+    pokemonOnly(name)
+    .then(data => {
+      setPokemon(data)
+    })
   },[])
 
   return (
