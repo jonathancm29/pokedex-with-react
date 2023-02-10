@@ -5,7 +5,7 @@ import {pokemonOnly} from '../services/pokemon'
 function RenderPokemon ({pokemon}){
   return (
     <li className="pokemon">
-      <h3>{pokemon.name}</h3>
+      <h2>{pokemon.name}</h2>
       <img src={pokemon.sprites.other.home.front_default} />
     </li>
   )

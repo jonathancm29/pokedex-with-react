@@ -12,6 +12,13 @@ main {
   flex-direction: column;
   width: 100%;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
 .pokemons {
   list-style: none;
   margin: 0;
@@ -25,10 +32,18 @@ main {
 }
 .pokemon {
   text-align: center;
-  border: 1px solid #333;
   border-radius: 5%;
+  background-color: var(--button-base);
+  transition: all .5s ease;
 }
 .pokemon:hover {
   border: 1px solid #fff;
   cursor: cell;
+  
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
