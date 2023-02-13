@@ -5,8 +5,9 @@
   align-items: center;
   width: 100%;
   max-width: 800px;
+  gap: 30px;
 }
-main {
+main, header {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -19,11 +20,12 @@ main {
   align-items: center;
   gap: 50px;
 }
-.pokemons {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
+}
+.pokemons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
@@ -46,4 +48,27 @@ main {
   display: flex;
   align-items: center;
   gap: 50px;
+}
+
+.container-pokemon {
+  background-color: var(--button-base);
+  width: 100%;
+  display: grid;
+  border-radius: 5%;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.pokeCard {
+  width: 100%;
+  padding: 20px;
+}
+
+.sprites > src{
+  width: 100%
+}
+
+.listiing {
+  display: flex;
+  justify-content: space-around;
+  
 }
